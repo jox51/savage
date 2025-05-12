@@ -23,10 +23,10 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    RewriteCond %{HTTP_HOST} http://localhost/blog/$
+    RewriteCond %{HTTP_HOST} http://replysavage.com/blog/$
     RewriteCond %{REQUEST_URI} !^/blog/
     RewriteRule ^(.*)$ /blog/$1
-    RewriteCond %{HTTP_HOST} http://localhost/blog/$
+    RewriteCond %{HTTP_HOST} http://replysavage.com/blog/$
     RewriteRule ^(/)?$ blog/index.php [L] 
 
 </IfModule>

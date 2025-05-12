@@ -29,10 +29,10 @@ if (file_exists(dirname(__FILE__) . '/.env')) {
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv('DB_NAME') ?: 'savage' );
+define( 'DB_NAME', getenv('DB_DATABASE') ?: 'savage' );
 
 /** Database username */
-define( 'DB_USER', getenv('DB_USER') ?: 'root' );
+define( 'DB_USER', getenv('DB_USERNAME') ?: 'root' );
 
 /** Database password */
 define( 'DB_PASSWORD', getenv('DB_PASSWORD') ?: 'test1234' );
